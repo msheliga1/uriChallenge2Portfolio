@@ -1,4 +1,4 @@
-# uriChallenge2Portfolio - Portfolioe 
+# uriChallenge2Portfolio - Portfolio
 URI bootcamp challenge 2 - week 2 - Portfolio Index with flexbox, media query and variables.
 
 Michael Sheliga 11.27.23

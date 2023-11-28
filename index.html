@@ -1,31 +1,43 @@
+<!-- MJS 11.27.23 URI Project 2 Portfolio -->
+<!-- Beware that camitalization matters -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Sheliga's Professional Web Programming Porfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        Michael Sheliga
-        <a>img="./assets/images/mjs.jpg" alt="Welcome to Mikes Profressional Portfolio"</a>
-        <nav>
+    <header id="topHeader">
+        <section id="myName">Michael Sheliga</section> 
+        <img id="myPhoto" src="./assets/images/mjsginger.jpg" alt="Welcome to Mikes Profressional Portfolio">
+        <nav id="topNav">
             <ul>
-                <item>
-                    Item Link 1
+                <item class="topItem">
+                    <a href="#MainSectionAboutMe"> About Me </a> <!-- href # on page, must be same as id="" -->
                 </item>
-                <item>
-                    Item Link 2
+                <item class="topItem">
+                    <a href="#MainSectionWork"> Work </a>
                 </item>
-                <item>
-                    Item Link 3
+                <item class="topItem">
+                    <a href="#MainSectionContactMe"> Contact Me </a>
+                </item>
+                <item class="topItem">
+                    <a href="./src/files/resume.pdf" alt="Resume Coming Soon">Resume</a>
                 </item>
             </ul>
         </nav>
     </header>
+    <header id="bottomHeader">
+        <h2 id="bottomHeaderText"> PhD and Kindergarten Class Attendee </h2>    
+    </header>
     <main>
-
+        <section class="mainSection" id="MainSectionAboutMe">About Me</section>
+        <section class="mainSection" id="MainSectionWork">Work</section>
+        <section class="mainSection" id="MainSectionContactMe">Contact Me</section>
+        <!-- <section class="mainSection"></section> No Resume Section -->
     </main>
     <footer>
 

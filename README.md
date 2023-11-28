@@ -7,7 +7,9 @@ This repo is for the University of Richmond (URI) coding bootcamp.
 This is the week 2 challenge due 11.27.23. 
 
 ## Link to Deployed Webpage
-Here is a link to the deployed website.  https://msheliga1.github.io/uriChallenge2Portfolio
+Here is a link to the deployed github.io site.  https://msheliga1.github.io/uriChallenge2Portfolio
+Link to screenshot of deployed github.io site. 
+Link to GitHub Repo: https://github.com/msheliga1/uriChallenge2Portfolio
 
 ## Project Goals
 In summary this repo will use gitHub, establish a portfolio including photo, links, media queries, flexbox and CSS-variables.  

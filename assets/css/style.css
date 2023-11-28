@@ -1,0 +1,74 @@
+/* MJS URI Challenge 2 Portfolio 11.27.23 */
+/* File is case sensitive */
+* {
+    box-sizing: border-box;  /* contents size = box less border, padding. (contrast content-box) */ 
+    padding: 0;
+    margin: 0;
+    font-size: 40pt;  /* has no effect on other sizes without the asterkit! */
+}
+
+/* a (anchor) occurs throughout - make text plain white */ 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* =====================================================================================*/ 
+/* Headers - Top Header with Name, Photo, Menu and Bottome Header with Interesting Fact */ 
+/* Top Header with Name, Photo and Menu */ 
+#topHeader {
+    display:block;  /* Nothing can go left-right-next to this header! */
+    /* background-color: blueviolet; */
+    font-size: 50pt;  /* has no effect on Name or LI font sizes */
+}
+
+#myName {
+    display: inline-block;  /* need this for next item (photo) to display inline */
+    background-color: blue;
+    width: 20%;
+    font-size: 30pt;
+}
+
+#myPhoto {
+    display: inline-block;  /* Allows item to left and right */
+    width: 5%;
+}
+
+#topNav {
+    display: inline-block; 
+    float: right;  /* inline-block ignored due to the float */
+    /* align-self: self-end; */
+}
+
+.topItem {
+    display: inline-block;
+    background-color: brown;
+    padding: 0, 10pt, 0, 10pt;  /* allowing 10pt padding all around stacks items in 2x2 array - argghhh */
+    font-size: 20pt;
+}
+
+/* Second header has interesting text and not much else */
+#bottomHeader {
+    display: block;  /* nothing to left or right */
+    background-color:aqua;
+    /* padding: 30%, 10%, 10%, 50%; */
+}
+
+#bottomHeaderText {  /* This gives very large white space before-after text.  L/R okay, T/B no good. */
+    display: block;
+    background-color: blueviolet;
+    margin-left: 50%; 
+    margin-right: 10%;
+    margin-top: 30%;
+    margin-bottom: 10%; 
+    font-size: 14pt; 
+}
+
+/* ================================ */ 
+/* Main Section - Words to Left, Vertical Bar, Differing Info to the Right */
+.mainSection {
+    font-size; 20pt;
+}
+
+#mainSectionAboutMe {
+}

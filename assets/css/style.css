@@ -44,7 +44,7 @@ a {
     display: inline-block;
     background-color: brown;
     padding: 0, 10pt, 0, 10pt;  /* allowing 10pt padding all around stacks items in 2x2 array - argghhh */
-    font-size: 20pt;
+    font-size: 12pt;
 }
 
 /* Second header has interesting text and not much else */
@@ -67,7 +67,11 @@ a {
 /* ================================ */ 
 /* Main Section - Words to Left, Vertical Bar, Differing Info to the Right */
 .mainSection {
-    font-size; 20pt;
+    font-size: 20pt;
+}
+
+.mainSectionText {
+    font-size: 12pt;
 }
 
 #mainSectionAboutMe {

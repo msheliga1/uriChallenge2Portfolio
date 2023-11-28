@@ -1,16 +1,23 @@
 /* MJS URI Challenge 2 Portfolio 11.27.23 */
 /* File is case sensitive */
-* {
+/* Do not use // style comments */
+* {  /* Note that the font-size here overrides many other font-sizes! */
     box-sizing: border-box;  /* contents size = box less border, padding. (contrast content-box) */ 
-    padding: 0;
-    margin: 0;
-    font-size: 40pt;  /* has no effect on other sizes without the asterkit! */
+    /* padding: 0; */
+    /* margin: 0; */
+    /* font-size: 40pt;  /* has no effect on other sizes without the asterkit! */
+
+}
+
+/* body - make text plain white */ 
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* a (anchor) occurs throughout - make text plain white */ 
 a {
     color: white;
-    text-decoration: none;
+    text-decoration: none;  // removing this does not change text size
 }
 
 /* =====================================================================================*/ 
@@ -31,20 +38,35 @@ a {
 
 #myPhoto {
     display: inline-block;  /* Allows item to left and right */
-    width: 5%;
+    width: 10%;
 }
 
 #topNav {
     display: inline-block; 
-    float: right;  /* inline-block ignored due to the float */
+    position: absolute;
+    right: 0%;
+    background-color: green;
+    /* float: right;  /* inline-block ignored due to the float */
     /* align-self: self-end; */
+}
+
+#topList {
+    list-style: none;
+    list-style: circle; // has no effect
 }
 
 .topItem {
     display: inline-block;
-    background-color: brown;
-    padding: 0, 10pt, 0, 10pt;  /* allowing 10pt padding all around stacks items in 2x2 array - argghhh */
-    font-size: 12pt;
+    padding: 10pt;  /* allowing 10pt padding all around stacked items in 2x2 array - argghhh */
+    border: 5pt;
+    border-style: solid;  /* required for border to show up! */
+    border-color: brown;
+    // border-radius: 10%;
+    margin: 5%, 50%, 5%, 50%; /* t, r, b, l - never get margin on right! */
+    background-color: purple;
+    font-size: 14pt;
+    text-decoration-line: underline;
+    text-decoration-color: white;
 }
 
 /* Second header has interesting text and not much else */
@@ -65,14 +87,80 @@ a {
 }
 
 /* ================================ */ 
-/* Main Section - Words to Left, Vertical Bar, Differing Info to the Right */
+/* Main Section - "Title" to Left, Vertical Bar, Differing Info )Text or images) to the Right */
 .mainSection {
+    display: flex;  /* this seems to be all the rage for layout. */
+    /* also trying to force this to be one line after another. */
+    /* Changing the comment from // to /asterik allows main section font-size to work! */
     font-size: 20pt;
+    margin-bottom: 25pt;
+    /* note that background-color is NOT inherited by children */
+    background-color: blue; /* This has effect but only in first mainSectionTitle. Maybe this is not properly referred in html? */ 
 }
 
+.mainSectionTitle {
+    /* float: left;  */
+    font-size: 20pt;
+    width: 20%;
+}
 .mainSectionText {
+    /* float: right;   /* This allows other text to be placed to the left of this text. */
+    padding-left: 12pt;  /* jacking this up increases white-space to left of text (bad // comment removes border */
+    border-style: solid;
+    border-width: 4pt;  /* This is the width of all borders - arghhh */ 
+    border-color: purple;
+    border-left: 6pt orange solid;
+    border-right: 6pt green solid;  /* border-right w/out soiid wont display!! */
+    /* border-top: 2pt;  /* undommenting removes top-border. Commenting it out provides border-width border. Arghh */ 
     font-size: 12pt;
+    /* with width 80, footnote text sits on top of text column */
+    width: 80%;  /* HELP - if 70%, later text (footnote, etc.) sits in between. */
+    /* text-align: right;  /* only aligns text, not block */
+}
+
+.mainSectionImages {
+    padding-left: 12pt;
+    border-left: 6pt orange solid;
+    font-size: 12pt;
+    /* with width 80, footnote text sits on top of text column */
+    width: 80%;  /* HELP - if 70%, later text (footnote, etc.) sits in between. */
 }
 
 #mainSectionAboutMe {
+}
+
+/* ================================ */ 
+/* Main Section2 - "Title" to Left, Vertical Bar, Differing Info )Text or images) to the Right */
+.mainSection2 {
+    display: block;  /* trying to prevent gaps between float:left width 20% and float right width 70% having other text. */
+    /* also trying to force this to be one line after another. */
+    /* Changing the comment from // to /asterik allows main section font-size to work! */
+    font-size: 20pt;
+    margin-bottom: 25pt;
+    /* note that background-color is NOT inherited by children */
+    background-color: blue; /* This has effect but only in first mainSectionTitle. Maybe this is not properly referred in html? */ 
+}
+
+.mainSectionTitle2 {
+    float: left;
+    font-size: 20pt;
+    width: 20%;
+}
+.mainSectionText2 {
+    float: right;   /* This allows other text to be placed to the left of this text. */
+    padding-left: 12pt;  /* jacking this up increases white-space to left of text (bad // comment removes border */
+    border-style: solid;
+    border-width: 4pt;  /* This is the width of all borders - arghhh */ 
+    border-color: purple;
+    border-left: 6pt orange solid;
+    border-right: 6pt green solid;  /* border-right w/out soiid wont display!! */
+    /* border-top: 2pt;  /* undommenting removes top-border. Commenting it out provides border-width border. Arghh */ 
+    font-size: 12pt;
+    /* with width 80, footnote text sits on top of text column */
+    /* above line improper end comment really messed up output. */
+    width: 80%;  /* HELP - if 70%, later text (footnote, etc.) sits in between. */
+    /* text-align: right;  /* only aligns text, not block */
+}
+
+#mainSectionAboutMe2 {
 }
